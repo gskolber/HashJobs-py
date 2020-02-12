@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block content %}
+	<div class="container-principal">
+    <h1>#HashJobs</h1>
+    <div class="container-pesquisa">
+        <form id="search_form" method="post" action="/dashboard">
+        <label>#</label>
+        <input id="search_value" type="text" placeholder="type your area here" name="search" />
+        <input type="submit" value="JOBS" /></form>
+    </div>
+{% endblock content %}

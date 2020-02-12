@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<a href="/" class="previous">&laquo; Previous</a>
+<h1>Dashboard</h1>
+<div class="container-tweets container">
+    <div class="panel-body">
+        {% for item in list_tags %}
+        <div class="media">
+            <a class="media-left">
+                <img alt="" class="media-object img-rounded" src="{{item['url_bg']}}">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">{{item['name']}} - @{{item['username']}}</h4>
+                <p>{{item['text']}}</p>
+                <ul class="nav nav-pills nav-pills-custom">
+                    <li>
+                        <a href="https://twitter.com/{{item['username']}}/status/{{item['id_tweet']}}"><span class="glyphicon glyphicon-share-alt"></span></a></li>
+                </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock content %}

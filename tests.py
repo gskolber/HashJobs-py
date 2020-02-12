@@ -19,8 +19,6 @@ class TestGetTweets(unittest.TestCase):
 
     
 
-            ##href="https://twitter.com/{{item['username']}}/status/{{item['id_tweet]}}'"
-
     
 
 

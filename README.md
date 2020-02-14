@@ -25,14 +25,13 @@ Install the pipenv and Dependencies and start the server.
 
 ```sh
 $ cd HashProject-py
-$ pip install pipenv
-$ pipenv install
-$ pipenv run python app.py
+$ pip install -r requirements.txt
+$ python main.py
 ```
 
 After that you can access at http://localhost:5000/
+Deploy in: http://hashjobs-py.herokuapp.com/
 
-You can test too in https://hashjobs.herokuapp.com/
 
 
 

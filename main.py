@@ -22,5 +22,7 @@ def dashboard_start():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    from os import environ
+    host = '0.0.0.0'
+    app.run(host = host, port=environ.get("PORT", 5000))
 

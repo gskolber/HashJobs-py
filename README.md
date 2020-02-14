@@ -26,7 +26,6 @@ Install the pipenv and Dependencies and start the server.
 ```sh
 $ cd HashProject-py
 $ pip install -r requirements.txt
-$ 
 $ python main.py
 ```
 

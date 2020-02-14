@@ -30,8 +30,8 @@ $ python main.py
 ```
 
 After that you can access at http://localhost:5000/
-
 Deploy in: http://hashjobs-py.herokuapp.com/
+
 
 
 

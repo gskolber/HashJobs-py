@@ -9,7 +9,7 @@ class TwitterApiRequest:
                             access_token_key=ConfigValues.Twitter.token,
                             access_token_secret=ConfigValues.Twitter.token_secret)
     def get_tweets(self,query):
-        hash_query = query + 'jobs'
+        hash_query = query 
         r = self.api.request('search/tweets', {'q':f'{hash_query}', 'count':20})
         print(r.status_code)
         resconvert = json.loads(r.text)
